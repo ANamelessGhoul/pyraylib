@@ -44,7 +44,7 @@ def main():
         if pyraylib.is_key_down(pyraylib.Keyboard.RIGHT):
             player.x += 2
         elif pyraylib.is_key_down(pyraylib.Keyboard.LEFT):
-            player -= 2
+            player.x -= 2
 
         # Camera target follows player
         camera.target = (player.x + 20, player.y + 20)
